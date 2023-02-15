@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void FetchData() async {
-    Timer mytimer = Timer.periodic(const Duration(seconds: 2), (timer) async {
+    Timer mytimer = Timer.periodic(const Duration(seconds: 5), (timer) async {
       var decodedData = await getData(Uri.parse(
           'https://capable-memory-364706.an.r.appspot.com/machine-data'));
       double temp1 = decodedData[5]['temperature'];
